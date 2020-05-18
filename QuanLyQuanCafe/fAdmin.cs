@@ -97,7 +97,7 @@ namespace QuanLyQuanCafe
             int index = -1;
             if (dtgvFood.SelectedCells.Count == 0) return;
             ID_Category = (int)dtgvFood.SelectedCells[0].OwningRow.Cells["ID_FoodCategory"].Value;
-
+            //comment test
             //ID_Category = CategoryDAO.Instance.GetCategoryIDByID(ID_Category).ID;
             int i = 0;
             foreach(Category item in cboFood_category.Items)
